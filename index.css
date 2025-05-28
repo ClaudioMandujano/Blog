@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-position: 50% 50%, 50% 50%;
+  background-position: 50% 50%;
   background-repeat: no-repeat, no-repeat;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/5617160_2920888copy.jpg');
   background-size: cover, cover;
@@ -231,6 +231,14 @@
     margin-top: 0;
   }
 
+  .u-section-2 .u-text-2 {
+    --animation-custom_in-translate_x: -200px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+    --animation-custom_in-scale: 1;
+  }
+
   .u-section-2 .u-image-2 {
     min-height: 441px;
   }
@@ -267,6 +275,11 @@
 
   .u-section-4 .u-text-1 {
     width: auto;
+    --animation-custom_in-translate_x: -200px;
+    --animation-custom_in-translate_y: 0px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+    --animation-custom_in-scale: 1;
   }
 }.u-section-5 .u-sheet-1 {
   min-height: 100vh;
@@ -561,9 +574,185 @@
     min-height: 239px;
   }
 }.u-section-8 .u-sheet-1 {
-  min-height: 243px;
+  min-height: 552px;
 }
 
 .u-section-8 .u-text-1 {
   margin: 60px 0;
+} .u-section-9 {
+  background-image: none;
+}
+
+.u-section-9 .u-sheet-1 {
+  min-height: 876px;
+}
+
+.u-section-9 .u-layout-wrap-1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.u-section-9 .u-image-1 {
+  min-height: 393px;
+  background-image: url("images/rassssss.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-9 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-9 .u-image-2 {
+  min-height: 393px;
+  background-image: url("images/rassss.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-9 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-9 .u-image-3 {
+  min-height: 393px;
+  background-image: url("images/rass.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-9 .u-container-layout-3 {
+  padding: 30px;
+}
+
+.u-section-9 .u-layout-cell-4 {
+  min-height: 393px;
+}
+
+.u-section-9 .u-container-layout-4 {
+  padding: 30px;
+}
+
+.u-section-9 .u-image-4 {
+  width: 223px;
+  height: 281px;
+  margin: 0 auto 0 223px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-9 .u-sheet-1 {
+    min-height: 738px;
+  }
+
+  .u-section-9 .u-image-1 {
+    min-height: 324px;
+  }
+
+  .u-section-9 .u-image-2 {
+    min-height: 324px;
+  }
+
+  .u-section-9 .u-image-3 {
+    min-height: 324px;
+  }
+
+  .u-section-9 .u-layout-cell-4 {
+    min-height: 324px;
+    background-position: 50% 50%;
+  }
+
+  .u-section-9 .u-image-4 {
+    height: 282px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-9 .u-sheet-1 {
+    min-height: 586px;
+  }
+
+  .u-section-9 .u-image-1 {
+    min-height: 248px;
+  }
+
+  .u-section-9 .u-image-2 {
+    min-height: 248px;
+  }
+
+  .u-section-9 .u-image-3 {
+    min-height: 248px;
+  }
+
+  .u-section-9 .u-layout-cell-4 {
+    min-height: 248px;
+  }
+
+  .u-section-9 .u-image-4 {
+    margin-left: 187px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-9 .u-sheet-1 {
+    min-height: 1764px;
+  }
+
+  .u-section-9 .u-image-1 {
+    min-height: 279px;
+  }
+
+  .u-section-9 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-9 .u-image-2 {
+    min-height: 558px;
+  }
+
+  .u-section-9 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-9 .u-image-3 {
+    min-height: 558px;
+  }
+
+  .u-section-9 .u-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-9 .u-layout-cell-4 {
+    min-height: 279px;
+  }
+
+  .u-section-9 .u-container-layout-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-9 .u-sheet-1 {
+    min-height: 1144px;
+  }
+
+  .u-section-9 .u-image-1 {
+    min-height: 176px;
+  }
+
+  .u-section-9 .u-image-2 {
+    min-height: 351px;
+  }
+
+  .u-section-9 .u-image-3 {
+    min-height: 351px;
+  }
+
+  .u-section-9 .u-layout-cell-4 {
+    min-height: 176px;
+  }
+
+  .u-section-9 .u-image-4 {
+    margin-left: 97px;
+  }
 }
