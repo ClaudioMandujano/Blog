@@ -43,6 +43,23 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+  
+    .amor-boton {
+      background-color: #e91e63;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .amor-boton:hover {
+      background-color: #c2185b;
+    }
+  
+
 
     @media (max-width: 768px) {
       .u-layout-row {
@@ -235,12 +252,28 @@ Con todo mi amor,<br> Tu futuro esposo 💍❤️
           </div>
         </div>
       </div>
-    </section>
-    
-    
-    
-    
-    <section class="u-backlink u-clearfix u-grey-80"> <b>Hecho por Claudio Mandujano</b>
-    </section>
+
+<div style="text-align: center; margin-top: 40px; margin-bottom: 10%;">
+  <button onclick="verificarAmor()" class="amor-boton">Si me amas, haz click acá</button>
+</div>
+
+<script>
+  function verificarAmor() {
+    const contrasena = prompt("Para continuar, decime la fecha de nuestro primer beso DD/MM/AAAA ❤️");
+    const claveCorrecta = "06/04/2025"; // Cambiá esto por la contraseña que quieras
+
+    if (contrasena === claveCorrecta) {
+      window.location.href = "velez.html"; // Redirige si la contraseña es correcta
+    } else {
+      alert("❌ Contraseña incorrecta. ¿Seguro que me amas?");
+    }
+  }
+</script>
+
+    </section> 
+  <section class="u-backlink u-clearfix u-grey-80"> <b>Hecho por Claudio Mandujano</b>
+</section>
   
+
+
 </body></html>
