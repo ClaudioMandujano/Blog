@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una Carta Para Vos</title>
+  <style>
+    body {
+  background: linear-gradient(to bottom right, #fbe8e7, #fff6f3);
+  font-family: 'Georgia', serif;
+  color: #4b2e2e;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+   body.unlocked {
+  background: url('images/headerqueres.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000000; /* texto negro cuando se desbloquea */
+}
+    h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+    p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+   .password-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff6f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+    .password-section input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+    .hidden {
+  display: none;
+}
+  </style>
+</head>
+<body>
+  <div class="password-section" id="lock">
+    <h2>Ingresá la contraseña para leer esta carta💌</h2> <br><br><h2>Pista: ¿te gustaria ser mi novia?</h2>
+    <input type="password" id="password" placeholder="Contraseña">
+  </div>
+
+  <div id="letter" class="hidden">
+  <p>A horas de que mayo se nos escape entre los dedos, me encuentro pensando en todo lo que atravesamos.</p>
+  <p>Mayo nos puso a prueba, de verdad. Hubo días en los que pesó el cansancio, el silencio, las dudas...</p>
+  <p>Pero una vez más, como siempre, lo enfrentamos juntos.</p>
+  <p>Y como todo, lo vamos a superar. Porque nuestro amor es más fuerte que cualquier tormenta. Más fuerte que todo.</p>
+
+  <p>Y ahora viene junio… y siento que va a ser nuestro mes.</p>
+  <p>El mes donde las cosas buenas empiecen a florecer.</p>
+  <p>El mes donde todo lo que venimos deseando empiece a hacerse real.</p>
+  <p>El mes donde volvamos a respirar profundo, mirarnos con paz, y recordar por qué elegimos esto tan hermoso que tenemos.</p>
+
+  <p>Además… se viene mi cumpleaños. Y no quiero regalos, ni planes extravagantes.</p>
+  <p>Lo que más deseo es simple: tenerte al lado.</p>
+  <p>Compartir ese día con vos, sentir tu abrazo, tu risa, tu amor.</p>
+  <p>Porque desde que apareciste en mi vida, entendí que los momentos más importantes se vuelven eternos si estás ahí.</p>
+  <p>Y este junio lo quiero vivir con vos en cada detalle, en cada plan improvisado, en cada beso.</p>
+
+  <p>Te amo con todo mi ser, Jazmín.</p>
+  <p>Y cuando te digo “con todo”, es literal: te amo con mi cuerpo, con mis pensamientos, con mi historia, con lo que soy y con todo lo que quiero ser a tu lado.</p>
+
+  <p>Tengo tantas ganas de hacerte el amor salvajemente…</p>
+  <p>De besar cada parte de tu cuerpo, de recorrerlo con mis manos, y hacerte mía en cada instante.</p>
+  <p>Quiero que estes arriba mio o en 4 y escucharte acabar</p>
+  <p>Quiero que ese deseo que nos quema se transforme en momentos inolvidables, donde el tiempo se detenga solo para nosotros.</p>
+
+  <p>Quiero que seas mi novia, la mujer con la que elijo construir mi vida.</p>
+  <p>Mi compañera, mi amiga, mi cómplice.</p>
+  <p>Y más allá de eso, quiero que seas mi futura esposa, la persona con la que sueñe cada mañana y cada noche.</p>
+
+  <p>Quiero que seas mía para siempre.</p>
+  <p>Pero no desde la idea de tenerte, sino desde ese deseo profundo de caminar juntos la vida.</p>
+  <p>De compartir lo bueno y lo difícil, de reírnos fuerte, de crecer como equipo, de cuidarnos con ternura, todos los días.</p>
+
+  <p>Tengo tanta fe en lo que viene. En vos. En mí. En nosotros.</p>
+  <p>Siento que junio nos va a traer eso que tanto venimos buscando: tranquilidad, unión, alegría...</p>
+  <p>Y si algún día miramos para atrás, sé que vamos a decir:</p>
+  <p><em>“Mayo fue duro, pero lo superamos, y después vino lo mejor”.</em></p>
+
+  <p>Gracias por existir.</p>
+  <p>Gracias por amarme.</p>
+  <p>Gracias por enseñarme lo que es querer con el alma.</p>
+  <p>Y gracias por estar. Porque con vos, todo vale la pena.</p>
+</div>
+
+ <script>
+  const correctPassword = "si";
+  const input = document.getElementById("password");
+  const lock = document.getElementById("lock");
+  const letter = document.getElementById("letter");
+
+  input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      if (input.value === correctPassword) {
+        lock.classList.add("hidden");
+        letter.classList.remove("hidden");
+        document.body.classList.add("unlocked");
+      } else {
+        alert("Contraseña incorrecta. Intentá de nuevo 💔");
+      }
+    }
+  });
+</script>
+</script>
+</body>
+</html>
