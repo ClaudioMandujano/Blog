@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una Carta Para Vos</title>
+  <style>
+    body {
+  background: linear-gradient(to bottom right, #fbe8e7, #fff6f3);
+  font-family: 'Georgia', serif;
+  color: #4b2e2e;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+   body.unlocked {
+  background: url('images/headerqueres.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000000; /* texto negro cuando se desbloquea */
+}
+    h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+    p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+   .password-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff6f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+    .password-section input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+    .hidden {
+  display: none;
+}
+  </style>
+</head>
+<body>
+  <div class="password-section" id="lock">
+    <h2>Mi color favorito?💌</h2> <br><br><h2>Pista: ¿O'higgins?</h2>
+    <input type="password" id="password" placeholder="Contraseña">
+  </div>
+ <h1>Un Sueño con Vos</h1>
+  <div id="letter" class="hidden">
+  <p>
+    Tengo esta foto de cuando fuimos a la cancha. Estabas vos con los chicos, y cada vez que la miro me agarra una mezcla de ternura, emoción y algo difícil de explicar. Pero ahora esa imagen me queda grabada en el alma. No salgo en la foto, pero me siento más presente que nunca.
+  </p>
+
+  <p>
+    Porque cuando la vi, sentí algo muy fuerte: <strong>esto es lo que quiero para mi vida</strong>. Me imaginé días como ese, con todos juntos en la cancha, compartiendo risas, abrazos. Me vi al lado tuyo, con todos los chicos, saliendo los fines de semana, caminando los domingos sin apuro, buscando un lugarcito para comer, hablando de la vida.
+  </p>
+
+  <p>
+    Y no es solo por vos, que me hacés sentir algo tan profundo… también es por ellos. Porque <strong>amo a tus hijos como si fueran míos</strong>. Y escuchar a Noah diciendo que quiere que sea tu novio, o a Azul preguntando por mí, te juro que me desarma. Me emociona, me llena el alma. Para mí eso tiene un valor enorme, porque no se trata solo de enamorarme de vos… <strong>me estoy enamorando de todo lo que somos juntos, de lo que podemos ser</strong>.
+  </p>
+
+  <p>
+    Siento que estamos construyendo algo real, algo que no pasa todos los días. Y esa foto, que a simple vista parece una más, para mí dice todo. Habla de amor, de familia, de futuro. Y me hace soñar despierto con todo lo que se viene.
+  </p>
+
+  <p>
+    Gracias por dejarme ser parte de esto. Gracias por dejarme soñar con vos y con ellos.
+  </p>
+
+    <div class="foto">
+    <img src="images/cancha.jpeg" alt="Foto en la cancha con los chicos">
+
+    <style>
+        .foto {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .foto img {
+      max-width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    </style>
+  </div>
+
+</div>
+
+ <script>
+  const correctPassword = "celeste";
+  const input = document.getElementById("password");
+  const lock = document.getElementById("lock");
+  const letter = document.getElementById("letter");
+
+  input.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      if (input.value === correctPassword) {
+        lock.classList.add("hidden");
+        letter.classList.remove("hidden");
+        document.body.classList.add("unlocked");
+      } else {
+        alert("Contraseña incorrecta. Intentá de nuevo 💔");
+      }
+    }
+  });
+</script>
+</script>
+</body>
+</html>
